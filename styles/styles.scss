@@ -1,0 +1,124 @@
+@use "./partials/global";
+@use "./partials/variables" as *;
+@use "./partials/mixins" as *;
+@use "./partials/typography" as *;
+
+.header-text {
+  width: 100%;
+  padding: 2rem;
+}
+
+.wrapper {
+  padding: 0 2rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablet {
+    max-width: $tablet-screen-size;
+  }
+
+  @include desktop {
+    max-width: $desktop-screen-size;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-container {
+  display: flex;
+}
+
+.text-area {
+  @include form-style;
+  height: 10rem;
+  width: 100%;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  width: 100%;
+  gap: 1rem;
+
+  @include tablet {
+    width: 80%;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__btn {
+    width: 10rem;
+  }
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dialog {
+  width:100px;
+  height: 100px;
+  background-color: antiquewhite;
+}
+
+.popup {
+  position: relative;
+}
+
+.dialog {
+  position: absolute;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12rem;
+  width: 100%;
+  height: 260px;
+  text-align: center;
+  padding: 2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: $dad-yellow;
+
+  @include tablet {
+    margin-top: 10rem;
+    height: 20rem;
+    width: 70.5%;
+  }
+
+  @include desktop {
+    margin-top: 16rem;
+    width: 69%;
+    height: 17.5rem;
+  }
+}
+
+.popup__close {
+  background-color: $dad-blue;
+  color: $dad-yellow;
+}
+
+.popup__response {
+
+  @include tablet {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  @include desktop {
+    font-size: 2rem;
+  }
+}

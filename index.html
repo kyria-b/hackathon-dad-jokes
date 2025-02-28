@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./scripts/index-page.js" defer></script>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>Dad Therapy Jokes</title>
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="container">
+        <div class="header-wrapper">
+          <img
+            class="header-text"
+            src="./assets/photos/Header.png"
+            alt="Dad Therapy Jokes" />
+        </div>
+        <section class="form-container">
+          <form class="input-form" id="input-form">
+            <label class="input-form__item"
+              >Tell Daddy what's wrong, type your troubles below, and I'll fix
+              'em with a groan worthy giggle!
+              <textarea
+                class="text-area"
+                id="user-problem"
+                name="userProblem"></textarea>
+            </label>
+            <div class="input-form__item">
+              <button class="btn input-form__btn" type="submit" id="submit">
+                Tell me, Daddy!
+              </button>
+            </div>
+          </form>
+        </section>
+        <section class="popup">
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

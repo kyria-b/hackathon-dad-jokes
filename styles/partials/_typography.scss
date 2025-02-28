@@ -1,0 +1,20 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+/*---------Type Kit---------*/
+/*---Typeface & Weights---*/
+@font-face {
+    font-family: "Chewy";
+    src: url("../../assets/fonts/Chewy-Regular.ttf") format(truetype);
+    font-weight: 400;
+    }
+@font-face {
+    font-family: "Comic Neue";
+    src: url("../../assets/fonts/ComicNeue-Regular.ttf") format(truetype);
+    font-weight: 400;
+    }
+@font-face {
+    font-family: "Comic Neue";
+    src: url("../../assets/fonts/ComicNeue-Bold.ttf") format(truetype);
+    font-weight: 700;
+    }

@@ -1,0 +1,44 @@
+@use "./typography" as *;
+@use "./mixins" as *;
+@use "./variables" as *;
+
+html {
+  box-sizing: border-box;
+  background-color: $dad-blue;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  font-family: "Comic Neue", "Sans-serif";
+  color: white;
+  height: 100vh;
+  background-image: url(../../assets/photos/Background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+label {
+  font-size: 1.18rem;
+  text-align: center;
+
+  @include tablet {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+}
+
+button {
+  font-family: "Comic Neue";
+  font-size: 1.063rem;
+  font-weight: 700;
+  background-color: $dad-yellow;
+  border-radius: 25px;
+  border: none;
+  padding: 0.62rem 1.25rem;
+  margin-top: 1.5rem;
+  color: $dad-blue;
+}
